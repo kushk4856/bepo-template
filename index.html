@@ -4,23 +4,22 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LifeLinkr: All in one IVF Solution</title>
-  <meta name="description"
-    content="IVF Clinic Management Software: LifeLinkr is one of the leading software to manage your patient records with customization for all your clinics. Try Demo Today">
-  <meta name="keywords" content="IVF Clinic Management Software">
-  <link rel="canonical" href="https://abhishekbakshi.in/" />
+  <title>BePO | Healthy, Natural, Organic Foods</title>
+ 
   <meta name="robots" content="index,follow">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LifeLinkr: All in one IVF Solution">
-  <meta property="og:description"
-    content="IVF Clinic Management Software: LifeLinkr is one of the leading software to manage your patient records with customization for all your clinics. Try Demo Today">
-  <meta property="og:image" content="https://lifelinkr.com/his-software/lp/v1/og.jpg">
-  <meta property="og:image:secure_url" content="https://lifelinkr.com/his-software/lp/v1/og.jpg">
-  <meta property="og:image:width" content="640">
-  <meta property="og:image:height" content="480">
-  <link href="images/favicon.png" rel="icon">
-  <link href="images/favicon.png" rel="apple-touch-icon">
+  <meta name="description" content="BePO is your source for natural, organic packaged food. Explore our health-focused products, including fruit powders, staples, and spices. "/>
+  <!-- <link rel="canonical" href="https://www.gobepo.com"/> -->
+  <meta property="og:title" content="BePO | Healthy, Natural, Organic Foods"/>
+  <meta property="og:description" content="BePO is your source for natural, organic packaged food. Explore our health-focused products, including fruit powders, staples, and spices. "/>
+  <meta property="og:image" content="https://static.wixstatic.com/media/5f8a59_23ab8ace196f48eab3944c8852a92712%7Emv2.png/v1/fit/w_2500,h_1330,al_c/5f8a59_23ab8ace196f48eab3944c8852a92712%7Emv2.png"/>
+  <meta property="og:image:width" content="2500"/>
+  <meta property="og:image:height" content="1330"/>
+  <meta property="og:url" content="https://www.gobepo.com"/>
+  <meta property="og:site_name" content="Bepo"/>
+  <link href="./images-new/pfavico.ico" rel="icon">
+  <link href="./images-new/pfavico.ico" rel="apple-touch-icon">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
 
@@ -174,7 +173,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-lg-6 register_form2">
             <div class="image-container">
                 <img src="./images-new/fenufibre.png" class="primary-image" alt="">
-                <img src="./images-new/fenufibre-product-back.png" class="hover-image" alt="">
+                <!-- <img src="./images-new/fenufibre-product-back.png" class="hover-image" alt=""> -->
+                <div class="card-container_effect hover-image">
+                  <div class="card_effect">
+                    <div class="card-content_effect">
+                      <img width="300px" height="300px" src="./images-new/fenufibre-product-back.png" alt="">
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
         </div>
@@ -2148,6 +2154,27 @@ Header Section  Section End
 
 </body>
 <script src="./js/script.js"></script>
+<script>
+  const card = document.querySelector(".card_effect");
+
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "rotateX(0) rotateY(0)";
+  });
+</script>
 <!-- <script src="./js/razarpay.js"></script> -->
 
 </html>
