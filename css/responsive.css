@@ -2,7 +2,7 @@
 
 /* Mobile Responsive code  */
 
-@media (min-width: 320px) and (max-width: 480px) { 
+@media (min-width: 320px) and (max-width: 480px) {
     .card-content {
         flex-direction: column
     }
@@ -46,7 +46,7 @@
         column-gap: 20px;
         margin-top: 13px;
     }
-    
+
     .Benefits-Lists {
         font-size: 14px;
         margin-left: 8px;
@@ -58,40 +58,40 @@
         margin-bottom: 10px;
     }
 
-    .hero-points{
+    .hero-points {
         display: flex;
         align-items: center;
     }
 
     #hero h2 {
-    padding-right: 0;
-    margin-bottom: 21px;
+        padding-right: 0;
+        margin-bottom: 21px;
     }
 
     .rev-mbl-section {
-    display: flex;
-    flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #mainForm .custom-checkbox {
         width: 20px;
         height: 18px;
-        margin-right: 9px ;
+        margin-right: 9px;
         margin-top: 5px;
     }
 
-    #hero .radio-container  input {
+    #hero .radio-container input {
         width: 22px;
     }
 
-    #hero .schedule-btn{
-    display: block;
-    text-align: center;
+    #hero .schedule-btn {
+        display: block;
+        text-align: center;
     }
 
-    .form_block .alternate-mobile{
-    display: block;
-    margin-top: 30px;
+    .form_block .alternate-mobile {
+        display: block;
+        margin-top: 30px;
     }
 
     .content_area {
@@ -99,8 +99,8 @@
         background: #f3f3f3;
     }
 
-    #footer{
-         background: #f3f3f3;
+    #footer {
+        background: #f3f3f3;
     }
 
 }
@@ -439,6 +439,8 @@
         text-align: left;
     }
 
+
+
     .right-area {
         width: 100%;
     }
@@ -623,6 +625,10 @@
 
 
 @media (max-width: 576px) {
+    #hero h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
 
     .mb-5 {
         margin-bottom: 0px !important;
@@ -638,9 +644,18 @@
     }
 
     #hero .register_form2 {
-        margin-left: 8px !important;
-        margin-right: 8px !important;
+        /* margin-left: 8px !important;
+        margin-right: 8px !important; */
         width: fit-content;
+    }
+
+    /* .nutrition_info.spoon_img img {
+        width: 150px;
+        height: 150px;
+    } */
+
+    .first_layer {
+        flex-wrap: wrap;
     }
 
 

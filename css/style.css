@@ -306,9 +306,11 @@ section {
 
 #hero h1 {
     margin: 0;
-    font-size: 38px;
+    /* font-size: 38px; */
+    font-size: 60px;
     font-weight: 400;
-    line-height: 45px;
+    /* line-height: 45px; */
+    line-height: 65px;
     color: var(--primary-purple) !important;
     text-transform: uppercase;
     font-family: Nunito
@@ -370,15 +372,15 @@ section {
 
 
 #hero .btn-get-started {
-    background: rgb(127, 96, 205) !important;
+    background: rgb(127, 96, 205);
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 20px 30px;
+    padding: 20px 50px;
     border-radius: 3px;
-    margin-top: 15px;
+    margin-top: 30px;
     color: #fff;
     border-radius: 50px;
     font-family: Nunito;
@@ -388,9 +390,13 @@ section {
 
 }
 
-#hero .schedule-btn {
-    display: none;
+#hero .btn-get-started:hover {
+    background: rgb(127, 96, 205);
 }
+
+/* #hero .schedule-btn {
+    display: none;
+} */
 
 
 .btn-get-started img {
@@ -592,6 +598,8 @@ div#thumb_0 {
     margin-bottom: 10px;
 }
 
+
+
 .benefits_block_content img {
     max-width: 100%;
     transition: .3s all ease-in-out;
@@ -599,6 +607,11 @@ div#thumb_0 {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.benefits_block_content:hover.benefits_block_content img {
+    transform: scale(1.1);
 }
 
 .benefits_desc {
@@ -1014,7 +1027,7 @@ aside {
     flex-direction: column;
     padding: 0px 0px;
     border-radius: 5px;
-    max-width: 520px;
+    max-width: 615px;
     min-width: 450px;
 }
 
@@ -1090,9 +1103,11 @@ aside {
 .register_tag {
     color: #fff;
     font-size: 40px;
-    margin-bottom: 5px;
-    font-family: Nunito;
-    font-weight: 600;
+    margin-bottom: 20px;
+    /* font-family: Nunito; */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-inline: 32px;
 }
 
 /* -----form  */
@@ -1315,11 +1330,12 @@ Schedule a Free Demo form Section Start
 
 #getreport {
     /* background: var(--form-bg); */
-    background-color: var(--primary-purple);
-    padding: 30px;
+    background-color: #382567;
+    padding: 90px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
+    /* font-weight: 700; */
     box-shadow: 0 0 8px #f3f3f3;
 }
 
@@ -1772,4 +1788,31 @@ input {
 }
 
 
-/* =====hover effect === */
+/* =====form section replacement === */
+
+.first_layer {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 16px;
+    flex-wrap: wrap;
+}
+
+.first_layer:last-child() {
+    margin-top: -33px;
+}
+
+.nutrition_info img {
+    width: 150px;
+    height: 150px;
+}
+
+.nutrition_info.spoon_img img {
+    width: 180px;
+    height: 180px;
+}
+
+.nutrition_info .name {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
