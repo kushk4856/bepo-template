@@ -362,6 +362,8 @@ section {
 .hero-points {
     color: #000;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .hero-points span img {
@@ -819,8 +821,8 @@ aside {
 }
 
 .right_block .date-and-time img {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     margin-right: 7px
 }
 
@@ -863,7 +865,7 @@ aside {
     top: -4px
 }
 
-.people_joined_right span {
+.people_joined_right .fixed-bottom-text {
     padding-left: 34px
 }
 
