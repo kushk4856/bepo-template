@@ -958,7 +958,7 @@ aside {
 }
 
 .right-area {
-    width: 407px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     gap: 7px;
