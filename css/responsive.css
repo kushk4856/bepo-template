@@ -118,7 +118,7 @@
     }
 
     .modal-footer {
-        padding: 1rem
+        padding: 1rem 2rem;
     }
 
     .accordian_section {
@@ -543,7 +543,7 @@
         padding: 10px;
         background: #fff;
         position: static;
-        padding-top: 20px
+        padding-top: 15px
     }
 
     #hero {
@@ -615,6 +615,10 @@
         width: 100%;
     }
 
+    #hero {
+        margin-bottom: 0px;
+    }
+
     .custom-checkbox {
         width: 18px;
         height: 18px;
@@ -681,6 +685,10 @@
 
     .benefits_grid_list {
         column-gap: 13px;
+    }
+
+    #footer p {
+        font-size: 18px;
     }
 
 
