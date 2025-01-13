@@ -1834,8 +1834,8 @@ input {
 }
 
 .nutrition_info.spoon_img img {
-    width: 320px;
-    height: 400px;
+    width: 322px;
+    height: 276px;
     object-fit: contain;
 }
 
@@ -1854,8 +1854,8 @@ input {
 .amazon-button {
     display: flex;
     align-items: center;
-    background-color: #ffa41c;
-    color: black;
+    background-color: rgb(127, 96, 205);
+    color: #fff;
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 8px;
@@ -1871,7 +1871,7 @@ input {
 }
 
 .amazon-button:hover {
-    background-color: #f39c12;
+    background-color: rgb(120, 83, 212);
 }
 
 .amazon-icon {
