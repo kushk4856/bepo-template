@@ -380,11 +380,11 @@ section {
     line-height: 20px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 20px 50px;
+    padding: 17px 60px;
     border-radius: 3px;
     margin-top: 30px;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     font-family: Nunito;
     width: fit-content;
     transition: 0.3s all ease-in-out;
@@ -1334,14 +1334,31 @@ Schedule a Free Demo form Section Start
 
 
 #getreport {
-    /* background: var(--form-bg); */
-    background-color: #382567;
+    position: relative;
     padding: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
-    /* font-weight: 700; */
     box-shadow: 0 0 8px #f3f3f3;
+    /* background-color: #382567; */
+    z-index: 0;
+    background: url(../images/bg.webp) no-repeat center center / cover;
+
+}
+
+#getreport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #382567;
+    opacity: 0.97;
+    /* Set the background opacity here */
+    border-radius: 10px;
+    /* Match the border radius */
+    z-index: -1;
 }
 
 .register_tag_msg {
@@ -1806,18 +1823,58 @@ input {
     margin-top: -33px;
 }
 
+.nutrition_info {
+    align-self: center;
+}
+
 .nutrition_info img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
 }
 
 .nutrition_info.spoon_img img {
-    width: 180px;
-    height: 180px;
+    width: 320px;
+    height: 400px;
+    object-fit: contain;
 }
 
 .nutrition_info .name {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
+}
+
+
+#mainForm {
+    margin-bottom: 30px;
+}
+
+/* ===== amazon button ==  */
+.amazon-button {
+    display: flex;
+    align-items: center;
+    background-color: #ffa41c;
+    color: black;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.2s;
+    font-family: inherit;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.amazon-button:hover {
+    background-color: #f39c12;
+}
+
+.amazon-icon {
+    height: 20px;
+    margin-right: 8px;
 }

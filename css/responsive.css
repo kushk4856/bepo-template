@@ -80,14 +80,16 @@
         margin-top: 5px;
     }
 
+
+
     #hero .radio-container input {
         width: 22px;
     }
 
-    #hero .schedule-btn {
+    /* #hero .schedule-btn {
         display: block;
         text-align: center;
-    }
+    } */
 
     .form_block .alternate-mobile {
         display: block;
@@ -431,6 +433,10 @@
 
 @media (max-width:768px) {
 
+    #spoon-img-div {
+        display: none;
+    }
+
     #hero {
         width: 100%;
         background: #f2efea;
@@ -667,6 +673,10 @@
 
     .first_layer {
         flex-wrap: wrap;
+    }
+
+    .amazon-button {
+        margin-top: 10px;
     }
 
 
