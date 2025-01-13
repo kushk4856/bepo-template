@@ -1854,8 +1854,10 @@ input {
 .amazon-button {
     display: flex;
     align-items: center;
-    background-color: rgb(127, 96, 205);
-    color: #fff;
+    /* background-color: rgb(127, 96, 205); */
+    background-color: #ffa41c;
+    /* color: #fff; */
+    color: #000;
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 8px;
@@ -1871,7 +1873,8 @@ input {
 }
 
 .amazon-button:hover {
-    background-color: rgb(120, 83, 212);
+    /* background-color: rgb(120, 83, 212); */
+    background-color: #f39c12;
 }
 
 .amazon-icon {
